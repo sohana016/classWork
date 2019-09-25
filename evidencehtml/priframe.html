@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<input type="button" value="Result" onclick="myResult()"><br>
+<input type="button" value="Mark Sheet" onclick="myMark()"><br>
+<input type="button" value="Form" onclick="myForm()"><br>
+<script>
+function myResult(){
+ parent.frames[1].location = "table.html"
+ }
+ function myMark(){
+ parent.frames[1].location = "table1.html"
+ }
+ function myForm(){
+ parent.frames[1].location = "formTablIn.html"
+ }
+</script>
+</body>
+</html>

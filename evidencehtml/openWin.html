@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<body>
+
+<form class="form-group" name="personalForm" id="personalId">
+First Name:
+<input type="text" class="form-control" name="fname" id="fname" placeholder="Enter First Name"><br>
+Last Name:
+<input type="text" class="form-control" name="lname" id="lname" placeholder="Enter Last Name"><br>
+
+<button type="reset">Reset</button>
+</form>
+<button type="button" onclick="myFunction()">Submit</button>
+<button type="button" onClick="closeWindow()">Close Window</button>
+
+<script>
+var win;
+//close window
+function closeWindow(){
+ win.close();
+     }
+
+
+function myFunction(){
+var fname = document.personalForm.fname.value;
+var lname = document.personalForm.lname.value;
+
+//open window
+
+ win=window.open(" "," ", "width=500");
+win.document.write("<h2><center>Your Information is Here</center></h2>");
+win.document.write("Name:"+fname+"<br>");
+win.document.write("Name:"+lname+"<br>");  
+    }
+		
+
+
+</script>
+</body>
+</html>

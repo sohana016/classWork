@@ -1,0 +1,4 @@
+Chapter 22
+1)O is function name
+2)linear search and binary search.
+3)Binary search is faster than linear search.

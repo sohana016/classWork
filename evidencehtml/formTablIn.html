@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<style>
+div{   margin:2px;
+        border:1px solid black;
+        width:600px;			
+		padding:50px;
+		}
+h1{
+	text-align:center;
+}
+table,th,td{
+	border:1px solid black;
+	width:50%;
+	}		
+</style>
+
+<body>
+<div style="background-color:powderblue">
+<h1 style="background-color:gray">Blue Developer Directory</h1>
+<h3>Contact Us</h3>
+<p>Please use this form to contact a member of our website tearm</p>
+<form name="myForm" id="myForm">
+<label for="fullName">Full Name:</label>
+	<input type="text" placeholder="Enter Name" name="fullName" id="fullName"><br><br>
+<label for ="email">Email Address:</label>
+	<input type="text" placeholder="Enter Email Address" name="email" id="email"><br><br>
+<label for ="pNumber">Phone Number: </label>
+	<input type="text" placeholder="Enter Name" placeholder="Enter Phone Number" name="pNumber" id="pNumber"><br><br>
+
+<fieldset>
+<legend>Best Time TO Call</legend>
+	<label><input type ="radio" name="call" id="call" value="Morning" checked>Morning</label>
+	<label><input type ="radio" name="call" id="call" value="Afternoon">Afternoon</label>
+	<label><input type ="radio" name="call" id="call" value="Evening">Evening</label>
+</fieldset><br>
+
+Budget
+<select name="bud" id="bud">
+<option>10000</option>
+<option>20000</option>
+<option>30000</option>
+</select><br><br>
+
+<fieldset>
+<legend>Service Needed</legend>
+(Check all that apply)<br>
+
+	<label><input type="checkbox" name="html" id="service" value="HTML, ">HTML </label>
+	<label><input type="checkbox" name="php" id="service" value="PHP, ">PHP </label><br>
+	<label><input type="checkbox" name="asp" id="service" value="ASP, ">ASP </label>
+	<label><input type="checkbox" name="java" id="service" value="JAVA, ">JAVA </label><br>
+	<label><input type="checkbox" name="cPlus" id="service" value="C++, ">C++ </label>
+	<label><input type="checkbox" name="design" id="service" value="Design, ">Design</label>
+</fieldset><br>
+	<input type="button" value="Submit" onclick="myFunction()">
+	<input type="reset" value="Reset">
+</form><br><br>
+<table>
+<tr>
+	<th>Information</th>
+	<th>Input Value</th>
+</tr>
+<tr>
+	<td>Full Name</td>
+	<td id ="name"></td>
+</tr>
+<tr>
+	<td>Email Address</td>
+	<td id="mail"></td>
+</tr>
+<tr>
+	<td>Phone Number</td>
+	<td id="phone"></td>
+</tr>
+<tr>
+	<td>Best Time TO Call</td>
+	<td id="bestTime"></td>
+</tr>
+<tr>
+	<td>Budget</td>
+	<td id="budget"></td>
+</tr>
+<tr>
+	<td>Service Needed</td>
+	<td id= "apply" ></td>
+</tr>
+</table>
+
+</div>
+<script>
+function myFunction(){
+var fullName = document.myForm.fullName.value;
+	document.getElementById("name").innerHTML = fullName;
+var email = document.myForm.email.value;
+	document.getElementById("mail").innerHTML = email;
+var pNumber = document.myForm.pNumber.value;
+	document.getElementById("phone").innerHTML = pNumber;
+var call = document.myForm.call.value;
+	document.getElementById("bestTime").innerHTML = call;
+var bud = document.myForm.bud.value;
+	document.getElementById("budget").innerHTML = bud;
+var service = "";
+	if(document.myForm.html.checked){
+		service += document.myForm.html.value;
+		document.getElementById("apply").innerHTML = service;
+}
+	if(document.myForm.php.checked){
+		service += document.myForm.php.value;
+		document.getElementById("apply").innerHTML = service ;
+}
+	if(document.myForm.asp.checked){
+		service += document.myForm.asp.value;
+		document.getElementById("apply").innerHTML = service;
+}	
+	if(document.myForm.java.checked){
+		service += document.myForm.java.value;
+		document.getElementById("apply").innerHTML = service ;
+}		
+	if(document.myForm.cPlus.checked){
+		service += document.myForm.cPlus.value;
+		document.getElementById("apply").innerHTML = service ;
+}	
+	if(document.myForm.design.checked){
+		service += document.myForm.design.value;
+		document.getElementById("apply").innerHTML = service;
+}
+	
+	
+}
+</script>
+</body>
+</html>

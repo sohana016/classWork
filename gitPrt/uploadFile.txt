@@ -1,0 +1,37 @@
+js
+ step
+       git init
+	git add .
+
+git commit -m "Profile Initialized"
+git config --global user.email "tawhida016@gmail.com"
+ git config --global user.name "Tawhida Shorif"
+
+git remote add origin https://github.com/sohana016/GitClass.git
+git push -u origin master
+*** show the directory use (pwd) command
+--git--
+file clone 
+*** git clone url (enter)
+	cd project Name
+1)creat new branch  = git checkout - b [branchName]
+2)show the branch = git status
+3)switching branch's = git checkout [branchName]
+*** At first change the file then write the add command
+ 4)commit(modified/added file) 
+		a)git add . (name current directory)
+		b)git commit -m "massage"
+		c)git push -u origin [branch_name]
+5)directori show = pwd	
+***
+step 1
+     new pull request
+step 2
+     Base baranch:Where update will be  merged
+compare: Branch which nedds
+step 3
+    create pull request
+step4
+     Marge pull request
+
+		
