@@ -1,0 +1,21 @@
+1)Group By(w3SQL)
+Aggregate function are(COUNT,MAX,MIN,SUM,AVG)
+2)Multiple row function call group functions.
+3)exception chapter
+4)Algorithms 
+	Binary search is faster than  linear search
+5)concurrently - MultiThrating(more than thread work at a time)S
+6)Swing and appex .Appex is better than swing.API dekha appex solve kora jabe.
+7) Serialization  :Implement Serializable ,output Stream class write to stream,object state byte Stream,
+8)ArraySorting,fibonaci,factorial,prime number
+9)Model view controller(mvc) arcitecture
+10)XML data Structure,DTD validation,parser,SAXparser,DOMpareser is better than SAXparser
+11)Avoiding Deadlock
+12)Boilarplate means a structure 
+13)sudoco
+14) what is javabean?
+15)Maven (reporesitory) Pom
+16)AngularJs two way data binding application
+17)Scope: The Scope in an AngularJS is a built-in object which contains application data and methods.
+18)CallBack function,promise (javaScript,java)
+19)javaScript er debugging (Consol log)
